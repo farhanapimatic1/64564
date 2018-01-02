@@ -11,7 +11,7 @@ module CalculatorService
 
     # An enum for SDK environments.
     class Environment
-      ENVIRONMENT = [PRODUCTION = 0].freeze
+      ENVIRONMENT = [PRODUCTION = 0, TESTING = 1].freeze
     end
 
     # An enum for API servers.
@@ -26,6 +26,9 @@ module CalculatorService
     @environments = {
       Environment::PRODUCTION => {
         Server::ICALCULATOR => 'http://Example.org/ICalculator'
+      },
+      Environment::TESTING => {
+        Server::ICALCULATOR => 'sd'
       }
     }
 
