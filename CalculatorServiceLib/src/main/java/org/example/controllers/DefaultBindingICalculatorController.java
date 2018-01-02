@@ -59,7 +59,7 @@ public class DefaultBindingICalculatorController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 5175747933816671227L;
+            private static final long serialVersionUID = 4878730366504774528L;
             {
                     put( "user-agent", "APIMATIC 2.0" );
                     put( "accept", "application/json" );
@@ -149,7 +149,7 @@ public class DefaultBindingICalculatorController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 5262148096594440538L;
+            private static final long serialVersionUID = 5091673901510318894L;
             {
                     put( "user-agent", "APIMATIC 2.0" );
                     put( "accept", "application/json" );

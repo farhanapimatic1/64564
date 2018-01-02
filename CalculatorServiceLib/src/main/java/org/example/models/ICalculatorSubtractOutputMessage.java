@@ -12,7 +12,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 public class ICalculatorSubtractOutputMessage 
         extends java.util.Observable
         implements java.io.Serializable {
-    private static final long serialVersionUID = 5050240813727640464L;
+    private static final long serialVersionUID = 5261592004007519170L;
     private SubtractResponse parameters;
     /** GETTER
      * TODO: Write general description for this method

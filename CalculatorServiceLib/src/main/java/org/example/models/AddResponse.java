@@ -12,7 +12,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 public class AddResponse 
         extends java.util.Observable
         implements java.io.Serializable {
-    private static final long serialVersionUID = 4965820986723152817L;
+    private static final long serialVersionUID = 5757617384096566878L;
     private Integer result;
     /** GETTER
      * TODO: Write general description for this method
