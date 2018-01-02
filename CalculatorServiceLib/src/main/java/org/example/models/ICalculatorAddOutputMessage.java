@@ -12,7 +12,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 public class ICalculatorAddOutputMessage 
         extends java.util.Observable
         implements java.io.Serializable {
-    private static final long serialVersionUID = 5414593338934915094L;
+    private static final long serialVersionUID = 5393554436822009617L;
     private AddResponse parameters;
     /** GETTER
      * TODO: Write general description for this method

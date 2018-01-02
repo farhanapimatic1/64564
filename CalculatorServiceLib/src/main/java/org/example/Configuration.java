@@ -47,7 +47,7 @@ public class Configuration {
     public static String getBaseUri(Servers server) {
         StringBuilder baseUrl = new StringBuilder(environmentsMap.get(Configuration.environment).get(server));
         Map<String, Object> parameters = new HashMap<String, Object>() {
-            private static final long serialVersionUID = 5628475361787477599L;
+            private static final long serialVersionUID = 5440015682444185904L;
             {
             }
         };
@@ -67,12 +67,18 @@ public class Configuration {
      * Map of all base URLs by environments and server aliases 
      */
     private static EnumMap<Environments, EnumMap<Servers, String>> environmentsMap = new EnumMap<Environments, EnumMap<Servers,String>>(Environments.class) {
-        private static final long serialVersionUID = 4697204814679397185L;
+        private static final long serialVersionUID = 5181520495692715832L;
         {
             put(Environments.PRODUCTION , new EnumMap<Servers, String>(Servers.class) {
-                private static final long serialVersionUID = 5751004304730530810L;
+                private static final long serialVersionUID = 4922826697560798977L;
                 {
                     put(Servers.ICALCULATOR, "http://Example.org/ICalculator");
+                }
+            });
+            put(Environments.TESTING , new EnumMap<Servers, String>(Servers.class) {
+                private static final long serialVersionUID = 4644112786551802853L;
+                {
+                    put(Servers.ICALCULATOR, "https://apimatic.io");
                 }
             });
         }
